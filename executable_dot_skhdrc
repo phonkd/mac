@@ -156,7 +156,7 @@ ctrl - return : kitty --directory /Users/phonkd
 #alt - t : yabai -m window --toggle float --toggle sticky
 
 # toggle sticky(+float), picture-in-picture
-alt - t : yabai -m window --toggle float --sub-layer above # --toggle manage 
+alt - t : yabai -m window --toggle float --sub-layer above --toggle manage 
 
 
 #
