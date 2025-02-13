@@ -44,5 +44,11 @@ yabai -m config                                 \
     mouse_action2                resize         \
     mouse_drop_action            swap
 yabai -m rule --add app="Raycast" manage=off
-yabai -m rule --add app="Finder" float=yes sub-layer=above
+# yabai -m rule --add app="Finder" float=yes sub-layer=above
+yabai -m rule --add \
+         label="Finder floating" \
+         app="^Finder$" \
+         title="(Copy|Connect|Move|Info|Finder Settings)" \
+         manage=off
+
 echo "yabai configuration loaded.."
