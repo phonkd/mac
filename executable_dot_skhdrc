@@ -147,7 +147,7 @@ ctrl - return : kitty --directory /Users/phonkd
 
 # toggle window zoom
 # alt - d : yabai -m window --toggle zoom-parent
-alt - f : yabai -m window --toggle zoom-fullscreen
+alt - f : yabai -m window --toggle zoom-fullscreen --sub-layer above
 
 # toggle window split type
 # alt - e : yabai -m window --toggle split
