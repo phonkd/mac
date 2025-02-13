@@ -84,7 +84,7 @@ alt - j : yabai -m window --focus south
 
 
 # fullscreen
-alt - f : yabai -m query --windows --space | jq '.[].id' | xargs -I{} yabai -m window {} --toggle zoom-fullscreen
+# broken somehow alt - f : yabai -m query --windows --space | jq '.[].id' | xargs -I{} yabai -m window {} --toggle zoom-fullscreen
 
 # move managed windows
 shift + alt - h : yabai -m window --warp west
@@ -147,7 +147,7 @@ ctrl - return : kitty --directory /Users/phonkd
 
 # toggle window zoom
 # alt - d : yabai -m window --toggle zoom-parent
-# alt - f : yabai -m window --toggle zoom-fullscreen
+alt - f : yabai -m window --toggle zoom-fullscreen
 
 # toggle window split type
 # alt - e : yabai -m window --toggle split
