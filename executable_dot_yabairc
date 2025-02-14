@@ -46,5 +46,6 @@ yabai -m config                                 \
 yabai -m rule --add app="Raycast" manage=off
 # yabai -m rule --add app="Finder" float=yes sub-layer=above
 yabai -m rule --add label="Finder floating" app="^Finder$" title="(Copy|Connect|Move|Info|Finder Settings)" manage=off
+yabai -m rule --add label="Shottr float" app="^Shottr$" manage=off --sub-layer=above
 
 echo "yabai configuration loaded.."
