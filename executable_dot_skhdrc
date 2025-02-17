@@ -156,8 +156,9 @@ alt - f : yabai -m window --toggle zoom-fullscreen --sub-layer above
 #alt - t : yabai -m window --toggle float --toggle sticky
 
 # toggle sticky(+float), picture-in-picture
-alt - t : yabai -m window --toggle float --sub-layer above --toggle manage 
-
+alt - t : current_layer=$(yabai -m query --windows --window | jq -r '.["sub-layer"]'); \
+if [ "$current_layer" = "above" ]; then yabai -m window --toggle float --sub-layer auto; \
+else yabai -m window --toggle float --sub-layer above; fi;
 
 #
 
