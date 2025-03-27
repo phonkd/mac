@@ -6,3 +6,6 @@ alias cat='bat --plain'
 alias catt='/bin/cat'
 alias stealmusic='yt-dlp -x --audio-format mp3 --embed-thumbnail --cookies-from-browser chromium --embed-metadata'
 alias cvim='chezmoi edit --apply'
+cpp() {
+  cat "$1" | pbcopy
+}
