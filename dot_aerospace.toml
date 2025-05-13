@@ -1,0 +1,89 @@
+after-login-command = []
+after-startup-command = []
+start-at-login = false
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+accordion-padding = 30
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'auto'
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+automatically-unhide-macos-hidden-apps = true
+[key-mapping]
+    preset = 'qwerty'
+[gaps]
+    inner.horizontal = 6
+    inner.vertical =   6
+    outer.left =       6
+    outer.bottom =     6
+    outer.top =        6
+    outer.right =      6
+[mode.main.binding]
+    alt-shift-comma = 'layout tiles horizontal vertical'
+    alt-comma = 'layout accordion horizontal vertical'
+    alt-h = 'focus left'
+    alt-j = 'focus down'
+    alt-k = 'focus up'
+    alt-l = 'focus right'
+    alt-shift-h = 'move left'
+    alt-shift-j = 'move down'
+    alt-shift-k = 'move up'
+    alt-shift-l = 'move right'
+    alt-minus = 'resize smart -50'
+    alt-equal = 'resize smart +50'
+
+    ## built in display
+    alt-q = 'workspace q'
+    alt-w = 'workspace w'
+    alt-e = 'workspace e'
+
+    ## external display 1 (display 2)
+    alt-a = 'workspace a'
+    alt-s = 'workspace s'
+    alt-d = 'workspace d'
+
+    ## external display 2 (display 3)
+    alt-z = 'workspace y'
+    alt-x = 'workspace x'
+    alt-c = 'workspace c'
+
+    alt-shift-q = 'move-node-to-workspace q'
+    alt-shift-w = 'move-node-to-workspace w'
+    alt-shift-e = 'move-node-to-workspace e'
+
+    alt-shift-a = 'move-node-to-workspace a'
+    alt-shift-s = 'move-node-to-workspace s'
+    alt-shift-d = 'move-node-to-workspace d'
+
+    alt-shift-z = 'move-node-to-workspace y'
+    alt-shift-x = 'move-node-to-workspace x'
+    alt-shift-c = 'move-node-to-workspace c'
+
+    # other
+    alt-f = 'fullscreen'
+    alt-v = 'exec-and-forget kitty --directory /Users/phonkd'
+    alt-space = 'layout floating tiling'
+
+    alt-tab = 'workspace-back-and-forth'
+    alt-shift-period = 'mode service'
+
+[mode.service.binding]
+    esc = ['reload-config', 'mode main']
+    r = ['flatten-workspace-tree', 'mode main'] # reset layout
+    f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
+    backspace = ['close-all-windows-but-current', 'mode main']
+    down = 'volume down'
+    up = 'volume up'
+    shift-down = ['volume set 0', 'mode main']
+
+[workspace-to-monitor-force-assignment]
+    q = 'built-in'
+    w = 'built-in'
+    e = 'built-in'
+
+    a = '2'
+    s = '2'
+    d = '2'
+
+    y = '3'
+    x = '3'
+    c = '3'
