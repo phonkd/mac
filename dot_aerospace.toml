@@ -1,9 +1,6 @@
 after-login-command = []
 after-startup-command = []
-exec-on-workspace-change = ['/bin/bash', '-c',
-    'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
-]
-start-at-login = false
+start-at-login = true
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
 accordion-padding = 30
@@ -35,31 +32,31 @@ automatically-unhide-macos-hidden-apps = true
     alt-equal = 'resize smart +50'
 
     ## built in display
-    alt-q = 'workspace q'
-    alt-w = 'workspace w'
-    alt-e = 'workspace e'
+    alt-q = 'workspace Q'
+    alt-w = 'workspace W'
+    alt-e = 'workspace E'
 
     ## external display 1 (display 2)
-    alt-a = 'workspace a'
-    alt-s = 'workspace s'
-    alt-d = 'workspace d'
+    alt-a = 'workspace A'
+    alt-s = 'workspace S'
+    alt-d = 'workspace D'
 
     ## external display 2 (display 3)
-    alt-z = 'workspace y'
-    alt-x = 'workspace x'
-    alt-c = 'workspace c'
+    alt-z = 'workspace Y'
+    alt-x = 'workspace X'
+    alt-c = 'workspace C'
 
-    alt-shift-q = 'move-node-to-workspace q'
-    alt-shift-w = 'move-node-to-workspace w'
-    alt-shift-e = 'move-node-to-workspace e'
+    alt-shift-q = 'move-node-to-workspace Q'
+    alt-shift-w = 'move-node-to-workspace W'
+    alt-shift-e = 'move-node-to-workspace E'
 
-    alt-shift-a = 'move-node-to-workspace a'
-    alt-shift-s = 'move-node-to-workspace s'
-    alt-shift-d = 'move-node-to-workspace d'
+    alt-shift-a = 'move-node-to-workspace A'
+    alt-shift-s = 'move-node-to-workspace S'
+    alt-shift-d = 'move-node-to-workspace D'
 
-    alt-shift-z = 'move-node-to-workspace y'
-    alt-shift-x = 'move-node-to-workspace x'
-    alt-shift-c = 'move-node-to-workspace c'
+    alt-shift-z = 'move-node-to-workspace Y'
+    alt-shift-x = 'move-node-to-workspace X'
+    alt-shift-c = 'move-node-to-workspace C'
 
     # other
     alt-f = 'fullscreen'
@@ -79,14 +76,20 @@ automatically-unhide-macos-hidden-apps = true
     shift-down = ['volume set 0', 'mode main']
 
 [workspace-to-monitor-force-assignment]
-    q = 'built-in'
-    w = 'built-in'
-    e = 'built-in'
+    Q = 'built-in'
+    W = 'built-in'
+    E = 'built-in'
 
-    a = '2'
-    s = '2'
-    d = '2'
+    A = '2'
+    S = '2'
+    D = '2'
 
-    y = '3'
-    x = '3'
-    c = '3'
+    Y = '3'
+    X = '3'
+    C = '3'
+
+
+
+exec-on-workspace-change = ['/bin/bash', '-c',
+    'sketchybar --trigger aerospace_workspace_change'
+]
