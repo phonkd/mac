@@ -61,7 +61,7 @@ automatically-unhide-macos-hidden-apps = true
     # other
     alt-f = 'fullscreen'
     alt-v = 'exec-and-forget kitty --directory /Users/phonkd'
-    alt-w = 'exec-and-forget firefox'
+    alt-w = 'exec-and-forget /Applications/Firefox.app/Contents/MacOS/firefox'
     alt-space = 'layout floating tiling'
 
     alt-tab = 'workspace-back-and-forth'
