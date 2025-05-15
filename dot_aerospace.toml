@@ -36,12 +36,12 @@ automatically-unhide-macos-hidden-apps = true
     alt-w = 'workspace W'
     alt-e = 'workspace E'
 
-    ## external display 1 (display 2)
+    ## external display 2 (display 2)
     alt-a = 'workspace A'
     alt-s = 'workspace S'
     alt-d = 'workspace D'
 
-    ## external display 2 (display 3)
+    ## external display 3 (display 3)
     alt-z = 'workspace Y'
     alt-x = 'workspace X'
     alt-c = 'workspace C'
@@ -80,13 +80,13 @@ automatically-unhide-macos-hidden-apps = true
     W = 'built-in'
     E = 'built-in'
 
-    A = '2'
-    S = '2'
-    D = '2'
+    A = ['(2)']
+    S = ['(2)']
+    D = ['(2)']
 
-    Y = '3'
-    X = '3'
-    C = '3'
+    Y = '(1)'
+    X = '(1)'
+    C = '(1)'
 
 
 
