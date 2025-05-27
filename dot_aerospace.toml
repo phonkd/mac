@@ -84,9 +84,9 @@ automatically-unhide-macos-hidden-apps = true
     S = 1
     D = 1
 
-    Y = '(1)'
-    X = '(1)'
-    C = '(1)'
+    Y = 3
+    X = 3
+    C = 3 
 
 
 
