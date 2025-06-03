@@ -80,9 +80,9 @@ automatically-unhide-macos-hidden-apps = true
     W = 'built-in'
     E = 'built-in'
 
-    A = 1
-    S = 1
-    D = 1
+    A = 2
+    S = 2
+    D = 2
 
     Y = 3
     X = 3
