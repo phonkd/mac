@@ -28,7 +28,7 @@ automatically-unhide-macos-hidden-apps = true
     alt-shift-j = 'move down'
     alt-shift-k = 'move up'
     alt-shift-l = 'move right'
-    alt-minus = 'split horizontal'
+    alt-minus = 'join-with right'
     alt-equal = 'resize smart +50'
 
     ## built in display
