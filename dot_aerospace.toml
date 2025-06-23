@@ -71,13 +71,11 @@ automatically-unhide-macos-hidden-apps = true
     if.app-name-regex-substring = 'settings'
     if.window-title-regex-substring = 'substring'
     if.workspace = 'workspace-name'
-    if.during-aerospace-startup = true
     check-further-callbacks = true
     run = ['layout floating']
 [[on-window-detected]]
     if.app-name-regex-substring = 'ClipBook'
     if.window-title-regex-substring = 'substring'
-    if.during-aerospace-startup = true
     run = ['layout floating'] 
 
 [mode.service.binding]
