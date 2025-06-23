@@ -66,8 +66,19 @@ automatically-unhide-macos-hidden-apps = true
     alt-tab = 'workspace-back-and-forth'
     alt-shift-period = 'mode service'
 
-[[float_rules]]
-app = "ClipBook"
+[[on-window-detected]]
+    if.app-id = 'com.apple.systempreferences'
+    if.app-name-regex-substring = 'settings'
+    if.window-title-regex-substring = 'substring'
+    if.workspace = 'workspace-name'
+    if.during-aerospace-startup = true
+    check-further-callbacks = true
+    run = ['layout floating']
+[[on-window-detected]]
+    if.app-name-regex-substring = 'ClipBook'
+    if.window-title-regex-substring = 'substring'
+    if.during-aerospace-startup = true
+    run = ['layout floating'] 
 
 [mode.service.binding]
     esc = ['reload-config', 'mode main']
