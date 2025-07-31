@@ -42,9 +42,9 @@ automatically-unhide-macos-hidden-apps = true
     alt-d = 'workspace D'
 
     ## external display 3 (display 3)
-    alt-z = 'workspace Y'
-    alt-x = 'workspace X'
-    alt-c = 'workspace C'
+    alt-u = 'workspace Y'
+    alt-i = 'workspace X'
+    alt-p = 'workspace C'
 
     alt-shift-q = 'move-node-to-workspace Q'
     alt-shift-w = 'move-node-to-workspace W'
